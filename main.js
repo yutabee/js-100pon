@@ -247,7 +247,139 @@
 // console.log(getAutumn("codenoaki")); // code
 // console.log(getAutumn("dokusyo")); // dokusyo
 // console.log(getAutumn("javascriptnoaki")); // javascript
+
+
+//41 お月見団子
+// function getNumberOfDango(s) {
+//     const arr = s.split(' ').map(x=>Number(x));
+//     let sum = 0;
+//     arr.forEach(x => {
+//         if (x >= 5) {
+//             sum+=5
+//         } else {
+//             sum+=x
+//         }  
+//     });
+//     return sum;   
+//     }
+
+//       console.log(getNumberOfDango("3 50")); // 8
+//       console.log(getNumberOfDango("100 500")); // 10
+//       console.log(getNumberOfDango("2 4")); // 6
       
+//42
+// function isReadyForSummer(s) {
+//     const arr = s.split(' ');
+//     let count = 0;
+//     arr.forEach(x => {
+//         if (x === 'S') {
+//             count += 1
+//         } else {
+//             return
+//         }
+//     });
+//     if (count >= 5) {
+//         return 'OK';
+//     } else {
+//         return 'NG';
+//     }
+// }
+
+// console.log(isReadyForSummer("W W W W W S S S S S")); // OK
+// console.log(isReadyForSummer("S S W W S W W W W W")); // NG
+// console.log(isReadyForSummer("W S S S S S S S S W")); // OK
+
+// //43
+// function getNumberOfHuman(n) {
+//     const arr = [...Array(n).keys()].map(x => x + 1);
+//     let count = 0;
+//     arr.forEach(x => {
+//         count+=x
+//     });
+//     return count;
+// }
+
+// console.log(getNumberOfHuman(4)); // 10
+// console.log(getNumberOfHuman(10)); // 55
+// console.log(getNumberOfHuman(50)); // 1275
+
+
+// //44
+// function candyOrChocolate(s) {
+//         if (s === "chocolate" || s === "candy") {
+//           return "Thanks!";
+//         } else {
+//           return "No!";
+//         }
+//       }
+
+// console.log(candyOrChocolate("chocolate")); // Thanks!
+// console.log(candyOrChocolate("candy")); // Thanks!
+// console.log(candyOrChocolate("pannacotta")); // No!
+
+
+// //45
+// function canParty(s) {
+//     if (s.length >= 11) {
+//         return 'OK';
+//     } else {
+//         return 11 - s.length;
+//     }
+// }
+
+// console.log(canParty("11111111111")); // OK
+// console.log(canParty("1111")); // 7
+// console.log(canParty("1111111111111111")); // OK
+
+
+// //46
+// function bestCopy(s) {
+//     return 'Best in ' + s;
+// }
+
+// console.log(bestCopy("a decade")); // Best in a decade
+// console.log(bestCopy("the world")); // Best in the world
+// console.log(bestCopy("history ever")); // Best in history ever
+
+
+//47
+// function probabilityGetSSR(n, t) {
+//     let LossProbability = 1;
+//     for (let i = 0; i < t; i++) {
+//         LossProbability *= (100 - n) / 100;
+//     }
+//     return Math.round(100 - 100 * LossProbability);
+//     }
+
+// console.log(probabilityGetSSR(1, 100)); // 63
+// console.log(probabilityGetSSR(1.5, 70)); // 65
+// console.log(probabilityGetSSR(1, 200)); // 87
+
+// //48
+// function getStartTimeForCook(s, t) {
+//     const arr = s.split(':').map(x => Number(x));
+//     const convertMin = arr[0] * 60 + arr[1];
+//     const cookTimeMin = convertMin - t;
+//     const cookTime = cookTimeMin / 60;
+//     const sepa = String(cookTime).split(".");
+//     const convert_sepa_min = Math.floor(Number('0.' + sepa[1]) * 60);
+//     return sepa[0] + ':' + convert_sepa_min;
+// }
+
+// console.log(getStartTimeForCook("19:00", 90)); // 17:30
+// console.log(getStartTimeForCook("20:00", 20)); // 19:40
+// console.log(getStartTimeForCook("20:30", 80)); // 19:10
+
+
+// function convertToUppercase(str) {
+//         return str.replace(/[A-Za-z0-9]/g, (s)=>{
+//           return String.fromCharCode(s.charCodeAt(0) + 0xFEE0);
+//         });
+// }
+
+// console.log(convertToUppercase("1234567")); // １２３４５６７
+// console.log(convertToUppercase("1111111")); // １１１１１１１
+// console.log(convertToUppercase("1145140")); // １１４５１４０
 
 
 // 完全数とほぼ完全数
